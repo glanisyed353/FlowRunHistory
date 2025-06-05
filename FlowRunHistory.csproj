@@ -8,10 +8,11 @@
     <ProjectGuid>{ED087C86-D148-44D6-9E93-AC7C3759C381}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PowerAutomateRunHistoryViewer</RootNamespace>
-    <AssemblyName>Power Automate Run History Viewer</AssemblyName>
+    <RootNamespace>FlowRunHistory</RootNamespace>
+    <AssemblyName>FlowRunHistory</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PackageIcon>icon.png</PackageIcon>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
@@ -40,7 +41,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Microsoft_Power_Automate.svg.ico</ApplicationIcon>
+    <ApplicationIcon>flowicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="McTools.Xrm.Connection, Version=1.2023.6.56, Culture=neutral, PublicKeyToken=96037217801d9658, processorArchitecture=MSIL">
@@ -200,6 +201,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper.cs" />
     <Compile Include="MyPlugin.cs" />
     <Compile Include="MyPluginControl.cs">
       <SubType>UserControl</SubType>
@@ -247,8 +249,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="flows.ico" />
-    <Content Include="Microsoft_Power_Automate.svg.ico" />
+    <Content Include="flowicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
