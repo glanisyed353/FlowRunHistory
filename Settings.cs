@@ -12,6 +12,7 @@ namespace MyXrmToolBoxTool1
     /// <remarks>
     /// This class must be XML serializable
     /// </remarks>
+    /// 
     public class Settings
     {
         public string LastUsedOrganizationWebappUrl { get; set; }

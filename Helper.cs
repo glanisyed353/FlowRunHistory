@@ -132,7 +132,7 @@ namespace PowerAutomateRunHistoryViewer
     }
     public class Propertiess
     {
-        public string startTime { get; set; }
+                public string startTime { get; set; }
         public string endTime { get; set; }
         public string status { get; set; }
     }
