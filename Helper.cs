@@ -116,7 +116,7 @@ namespace PowerAutomateRunHistoryViewer
         public const string SelectFlowFirst = "Please select a flow before clicking.";
         public const string LinkOpenError = "Could not open link: {0}";
         public static readonly string NotConnectedMessage = "Not connected to Dataverse. Please connect to your environment before using this tool.";
-
+        public static readonly Uri InfoNotificationUri = new Uri("https://github.com/MscrmTools/XrmToolBox");
     }
 
 
