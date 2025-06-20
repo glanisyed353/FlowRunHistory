@@ -60,7 +60,11 @@ namespace MyXrmToolBoxTool1
         }
         private void MyPluginControl_Load(object sender, EventArgs e)
         {
-            ShowInfoNotification("This is a notification that can lead to XrmToolBox repository", new Uri("https://github.com/MscrmTools/XrmToolBox"));
+            if (Service == null)
+            {
+                ShowInfoNotification(Constants.NotConnectedMessage, Constants.InfoNotificationUri);
+                EnableAllComponents(false);
+            }
 
             // Loads or creates the settings for the plugin
             if (!SettingsManager.Instance.TryLoad(GetType(), out mySettings))
